@@ -11,16 +11,16 @@ from helper.database import  insert ,find_one,used_limit,usertype,uploadlimit,ad
 from pyrogram.file_id import FileId
 from helper.database import daily as daily_
 from helper.date import add_date ,check_expi
-CHANNEL = os.environ.get('CHANNEL',"")
+CHANNEL = os.environ.get('CHANNEL',"Private_Bots")
 import datetime
 from datetime import date as date_
-STRING = os.environ.get("STRING","")
-log_channel = int(os.environ.get("LOG_CHANNEL",""))
-token = os.environ.get('TOKEN','')
+STRING = os.environ.get("STRING","1BVtsOMMBu0RMh0aCWzTa2JpntwHSjksPOC1O-g4W7UTN98t3Xz4ZlUa9wFVSvPrvQ_vf_pGrmhMMMzpIqz6vwWbkymUH54vFybqbmiElXn1dE6PpPI2Rq-5eoulNX4QFGD39bICusqcsiDHdtt0bcJ_ZL3KYg5bC7TXDxQb_ZaafFEeIFxSVG-WTLE_Xil4t46LTBbGlZZppVKKtF03nRIzYDjNpoxFtUm0cOEWOTd_N52S29orMLJY8n9UNPSBh9iT6B0LIhT-oGDG0o1QTi8QZaD0Ba3NJZCSBdjhaQjyfPMJqdcmm9Lv1HHCckj-Fs9FPVrOboFToyRSUWWF1m1_fRAcWMjU=")
+log_channel = int(os.environ.get("LOG_CHANNEL","-1001924268233"))
+token = os.environ.get('TOKEN','5966666716:AAHIXeBsuFAi9sq4H0TGQjhm0KA9hpfzZL8')
 botid = token.split(':')[0]
 
-DB_NAME = os.environ.get("DB_NAME","")
-DB_URL = os.environ.get("DB_URL","")
+DB_NAME = os.environ.get("DB_NAME","RenamerBot")
+DB_URL = os.environ.get("DB_URL","mongodb+srv://ronoxe1308:nulcnaRvqNC5uty@rename-telegram-bot-log.clbv64f.mongodb.net/?retryWrites=true&w=majority")
 mongo = pymongo.MongoClient(DB_URL)
 db = mongo[DB_NAME]
 dbcol = db["promo"]
